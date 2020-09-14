@@ -32,12 +32,10 @@ galaxy_info:
   - name: OpenWrt
     versions:
     - all
-
   galaxy_tags:
   - ssh
   - sshkey
   - sshkeys
   - openssh
   - dropbear
-
 dependencies: []
