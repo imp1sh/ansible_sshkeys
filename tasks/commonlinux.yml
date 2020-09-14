@@ -1,0 +1,7 @@
+- name: "Installing ssh keys"
+  authorized_key:
+          user: "{{ item.user }}"
+          state: "{{ item.state|default('present', true) }}
+          key: "{{ item.key }}"
+  when: sshkeys is defined
+  loop: "{{ sshkeys }}"
